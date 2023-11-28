@@ -2,7 +2,7 @@
 
 let value = 0;
 const inputs = Array.from(document.querySelectorAll(".code"));
-inputs[0].focus();
+// inputs[0].focus();
 
 inputs.forEach(input => {
     input.addEventListener("keyup", function (e) {
@@ -10,7 +10,7 @@ inputs.forEach(input => {
         let id = parseInt(this.id) + 1;
         let previousSibling = this.previousElementSibling;
         let nextSibling = document.getElementById(id);
-
+        console.log(value);
         //* when done, join the values from the inputs and make it a string
         if (key === "Enter") {
             let string = inputs.map(input => input.value).join("");
@@ -42,6 +42,8 @@ inputs.forEach(input => {
         let key = e.key;
         if (key === "Backspace") {
             value++
+        } else {
+            value = 0;
         }
     })
 })
