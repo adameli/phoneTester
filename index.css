@@ -98,13 +98,16 @@ h2 {
 
 input#name {
     /* height: 40px; */
-    font-size: 6vw;
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    width: 100%;
+    max-width: 250px;
     margin-top: 4vh;
 
     padding: 10px;
     border-radius: 10px;
     border: none;
     outline: none;
+    text-align: center;
 }
 
 button {
