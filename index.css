@@ -9,6 +9,8 @@ body {
     height: 100vh;
     display: flex;
     background-color: #F6EFE8;
+    justify-content: center;
+    align-items: center;
     padding: 0 16px;
 }
 
@@ -28,6 +30,7 @@ body {
     font-size: 25px;
 }
 
+/* 
 main {
     width: 100%;
     display: flex;
@@ -121,3 +124,5 @@ button {
     background-color: #363A8D;
     color: white;
 }
+
+*/
